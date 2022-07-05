@@ -1,70 +1,545 @@
-<!DOCTYPE html>
 <html>
-<head>
-<style>
+<style>>
+#about {
+    background-color: #808080;
+    text-align: center;
+    color: #808080;
+    margin: 0px 0 20px 0;
+    padding: 50px;
+}
+#portfolio {
+  background-color: #808080;
+    text-align: center;
+    color: white;
+    margin: 0px 0 20px 0;
+    padding: 20px;
+}
+#contact{
+    background-color: #808080;
+    text-align: center;
+    color: white;
+    margin: 0px 0 20px 0;
+    padding: 50px;
+}
+img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+#myNavbar{
+  background-color: 808080;
+  font-weight: bold;
+  color: white !important;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.nav{
+    background-color: 808080;
+    font-weight: bold;
+    text-align: center;
+    color: white !important;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+body { 
+  padding-bottom: 70px;
+}
 * {
   box-sizing: border-box;
 }
-#hp  {
-float: left;    
- margin: 0 15px 0 0;
+
+.column {
+  background-color: #808080;
+  float: left;
+  width: 20%;
+  color: white;
+  padding: 5px;
 }
-.clearfix::after {
+
+/* Clearfix (clear floats) */
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
 </style>
-</head>
-<body>
+<!-- NAV BAR -->
+<div id="myNavbar">
+    <div class="container-fluid ">
+		<div>
+			<ul class="nav navbar-nav" id = "navStuff">
+				<li><a href="#about" ><span class="about"></span> About</a></li>
+				<li><a href="#portfolio"><span class="portfolio"></span> Portfolio</a></li>
+				<li><a href="#contact"><span class="contact"></span> Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>     
+<!-- End Nav Bar -->
+
+<!--Portfolio-->
+<section class="image-bg-fluid-height" id="portfolio">
+  <h1>Department of Software Technology</h1>
+  <h1>Undergraduate Thesis Program</h1>
   
-  <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-    <div class="centerbox col-md-6 text-center">
-      <div class="row">
-        <h1>Department of Software Technology</h1>
-      </div>
-      <div class="row">
-        <h2>Undergraduate Thesis Program </h2>        
-      </div>
-      <div class="row">
-        <h2>Using Convolutional Neural Networks for
-            Naturalistic Speech Emotion Recognition
-            (N-SER) 
-        </h2>        
-      </div>
-      <div class="row">
-        <div class="clearfix">
-          <img src="nilo.jpg" alt="nilo" width="200" height="200" id= "hp">
-          <h3>email: </h3>
-          <h3>Contact number: </h3>
-        </div>
-        <div class="clearfix">
-          <img src="chu.jpg" alt="chu" width="200" height="200"id= "hp">
-          <h3>email: </h3>
-          <h3>Contact number: </h3>
-        </div>
-        <div class="clearfix">
-          <img src="rey.jpg" alt="rey" width="200" height="200"id= "hp">
-          <h3>email: </h3>
-          <h3>Contact number: </h3>
-        </div>
-        <div class="clearfix">
-            <img src="jed.jpg" alt="jed" width="200" height="200"id= "hp">
-            <h3>email: </h3>
-            <h3>Contact number: </h3>
-          </div>
-        <div class="clearfix">
-          <img src="yamie.jpg" alt="yamie" width="200" height="200"id= "hp">
-          <h3>email: </h3>
-          <h3>Contact number: </h3>
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-    </div>
-  </div>
+</section>
+<!-- End Portfolio -->
+
+<!-- Home -->
+
+<section class="image-bg-fluid-height" id="about">
+<div class = "row">
+<div class = "column">
+  <h1>chu</h1>
+  <img class="img-responsive" src="chu.jpg" width="200" height="200">
+  <h3>email</h3>
 </div>
+<div class = "column">  
+  <h1>rey</h1>
+  <img class="img-responsive" src="rey.jpg" width="200" height="200">
+  <h3>email</h3>
+</div>  
+<div class = "column">
+  <h1>Jed</h1>
+  <img class="img-responsive" src="jed.jpg" width="200" height="200">
+  <h3>email</h3>
+</div>
+<div class = "column">
+  <h1>nilo</h1>
+  <img class="img-responsive" src="Nilo.jpg" width="200" height="200">
+  <h3>email</h3>
+</div>
+<div class = "column">
+  <h1>doc yamie</h1>
+  <img class="img-responsive" src="yamie.png" width="200" height="200">
+  <h3>email</h3>
+</div>
+</div>
+</section>
+<!--End Home-->
+
+<!-- Contact -->
+<section class="image-bg-fluid-height" id="contact">
+  
+  <h1>Using Convolutional Neural Networks for Naturalistic Speech Emotion Recognition (N-SER) </h1>
+  <h3>Speech emotion recognition is prevalent in the field of human-computer inter-
+    actions. It helps machines understand emotions that are applicable to chat-bots
+    and virtual personal assistants. Findings from literature indicate that data-driven
+    approaches such as Convolutional Neural Networks (CNN) were used to create
+    models using data from posed emotion expressions. Convolutional Neural Net-
+    works are used in studies such as image processing and speech emotion recognition.
+    However, the use of posed and small-scale datasets result in models overfitting. In
+    this study, Mel-frequency cepstral coefficients (MFCC) and Mel-Spectrogram fea-
+    tures were extracted from the naturalistic data of the IEMOCAP dataset. These
+    audio features are used as input for the experiments. Traditional machine learn-
+    ing models such as Random Forest Classifier, XGBoost Classifier, Multi-Layer
+    Perceptron Classifier, Support Vector Machine and Logistic Regression were used
+    for the experiments. Mel-spectrogram features as input has the highest perfor-
+    mance among the machine learning models with a validation accuracy of 77.7%.
+    Furthermore, deep learning models such as TDNN, CNN with LSTM, Base CNN
+    and ResNet50 were also used for the experiments. The TDNN model using Con-
+    volution layers with MFCC as input reached a validation accuracy of 70.2%. All
+    models were validated using cross-validation with performance metrics. Results
+    show that machine learning models perform better with Mel-spectrogram as input.</h3>
+
+      <h3 id="_100:101" style="top:101;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      Contents
+      </h3>
+      <h3 id="_100:121" style="top:121;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1 Introduction 1
+      </h3>
+      <h3 id="_100:141" style="top:141;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1.1 Background of the Study . . . . . . . . . . . . . . . . . . . . . . . 1
+      </h3>
+      <h3 id="_100:161" style="top:161;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1.2 Research Objectives . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+      </h3>
+      <h3 id="_100:182" style="top:182;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1.2.1 General Objective . . . . . . . . . . . . . . . . . . . . . . . 6
+      </h3>
+      <h3 id="_100:202" style="top:202;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1.2.2 Specific Objectives . . . . . . . . . . . . . . . . . . . . . . 6
+      </h3>
+      <h3 id="_100:222" style="top:222;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1.3 Scope and Limitations of the Study . . . . . . . . . . . . . . . . . 6
+      </h3>
+      <h3 id="_100:242" style="top:242;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1.4 Significance of the Study . . . . . . . . . . . . . . . . . . . . . . . 7
+      </h3>
+      <h3 id="_100:262" style="top:262;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1.5 Methodology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+      </h3>
+      <h3 id="_100:283" style="top:283;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1.5.1 Model Architecture . . . . . . . . . . . . . . . . . . . . . . 8
+      </h3>
+      <h3 id="_100:303" style="top:303;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      1.5.2 Model Validation . . . . . . . . . . . . . . . . . . . . . . . 9
+      </h3>
+      <h3 id="_100:323" style="top:323;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      2 Review of Related Literature 10
+      </h3>
+      <h3 id="_100:343" style="top:343;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      2.1 Emotion Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+      </h3>
+      <h3 id="_100:363" style="top:363;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      2.2 Posed Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+      </h3>
+      <h3 id="_100:384" style="top:384;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      2.3 Induced Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+      </h3>
+      <h3 id="_100:404" style="top:404;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      2.4 Naturalistic Datasets . . . . . . . . . . . . . . . . . . . . . . . . . 13
+      </h3>
+      <h3 id="_100:424" style="top:424;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      2.5 Datasets and Emotion Models . . . . . . . . . . . . . . . . . . . . 15
+      </h3>
+      <h3 id="_100:444" style="top:444;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      2.6 Machine Learning in Speech Emotion Recognition . . . . . . . . . 17
+      </h3>
+      <h3 id="_100:464" style="top:464;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      </h3>
+      <h3 id="_100:485" style="top:485;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3 Theoretical Framework 22
+      </h3>
+      <h3 id="_100:505" style="top:505;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.1 Emotion Theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+      </h3>
+      <h3 id="_100:525" style="top:525;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.1.1 Categorical Approach . . . . . . . . . . . . . . . . . . . . . 22
+      </h3>
+      <h3 id="_100:545" style="top:545;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.1.2 Dimensional Approach . . . . . . . . . . . . . . . . . . . . 25
+      </h3>
+      <h3 id="_100:565" style="top:565;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.1.3 Appraisal Approach . . . . . . . . . . . . . . . . . . . . . . 28
+      </h3>
+      <h3 id="_100:586" style="top:586;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.2 Signal Processing . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+      </h3>
+      <h3 id="_100:606" style="top:606;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.2.1 Speech in Emotion Recognition . . . . . . . . . . . . . . . 29
+      </h3>
+      <h3 id="_100:626" style="top:626;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.2.2 Fourier Transform . . . . . . . . . . . . . . . . . . . . . . . 29
+      </h3>
+      <h3 id="_100:646" style="top:646;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.2.3 Discrete Cosine Transform . . . . . . . . . . . . . . . . . . 31
+      </h3>
+      <h3 id="_100:666" style="top:666;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.2.4 MFCC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+      </h3>
+      <h3 id="_100:687" style="top:687;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.2.5 Spectrogram . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+      </h3>
+      <h3 id="_100:707" style="top:707;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.3 End-to-End Model Framework . . . . . . . . . . . . . . . . . . . . 34
+      </h3>
+      <h3 id="_100:727" style="top:727;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.4 Convolutional Neural Networks . . . . . . . . . . . . . . . . . . . 34
+      </h3>
+      <h3 id="_100:747" style="top:747;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.4.1 Hidden Layer . . . . . . . . . . . . . . . . . . . . . . . . . 35
+      </h3>
+      <h3 id="_100:767" style="top:767;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.4.2 Output Layer . . . . . . . . . . . . . . . . . . . . . . . . . 38
+      </h3>
+      <h3 id="_100:788" style="top:788;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      3.5 Time Delay Neural Network . . . . . . . . . . . . . . . . . . . . . 39
+      </h3>
+      <h3 id="_100:808" style="top:808;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4 Building a Speech Emotion Recognition Model 41
+      </h3>
+      <h3 id="_100:828" style="top:828;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.1 Framework . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+      </h3>
+      <h3 id="_100:848" style="top:848;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.1.1 Input . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+      </h3>
+      <h3 id="_100:868" style="top:868;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.1.2 Training and Testing Sets . . . . . . . . . . . . . . . . . . 42
+      </h3>
+      <h3 id="_100:889" style="top:889;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.1.3 Classification . . . . . . . . . . . . . . . . . . . . . . . . . 42
+      </h3>
+      <h3 id="_100:909" style="top:909;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.1.4 Output . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+      </h3>
+      <h3 id="_100:929" style="top:929;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.2 Dataset Details . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+      </h3>
+      <h3 id="_100:969" style="top:969;left:100">
+      <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.2.1 Dataset Contents and Environment . . . . . . . . . . . . . 45
+      </h3>
+      <h3 id="_100:1201" style="top:1201;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.2.2 Emotion Labels and Distribution . . . . . . . . . . . . . . 46
+      </h3>
+      <h3 id="_100:1221" style="top:1221;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.2.3 Pre-processing and Feature Extraction . . . . . . . . . . . 47
+      </h3>
+      <h3 id="_100:1241" style="top:1241;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.2.4 Dataset Features . . . . . . . . . . . . . . . . . . . . . . . 49
+      </h3>
+      <h3 id="_100:1261" style="top:1261;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.2.5 Libraries and Tools . . . . . . . . . . . . . . . . . . . . . . 50
+      </h3>
+      <h3 id="_100:1282" style="top:1282;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.3 Traditional Machine Learning . . . . . . . . . . . . . . . . . . . . 52
+      </h3>
+      <h3 id="_100:1302" style="top:1302;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.3.1 Random Forest Classifier . . . . . . . . . . . . . . . . . . . 53
+      </h3>
+      <h3 id="_100:1322" style="top:1322;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.3.2 XGBoost Classifier . . . . . . . . . . . . . . . . . . . . . . 53
+      </h3>
+      <h3 id="_100:1342" style="top:1342;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.3.3 Multi-Layer Perceptron Classifier . . . . . . . . . . . . . . 54
+      </h3>
+      <h3 id="_100:1362" style="top:1362;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.3.4 Support Vector Machine . . . . . . . . . . . . . . . . . . . 55
+      </h3>
+      <h3 id="_100:1383" style="top:1383;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.3.5 Logistic Regression . . . . . . . . . . . . . . . . . . . . . . 55
+      </h3>
+      <h3 id="_100:1403" style="top:1403;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.4 Model Architecture . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+      </h3>
+      <h3 id="_100:1423" style="top:1423;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.4.1 ResNet50 . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+      </h3>
+      <h3 id="_100:1443" style="top:1443;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.4.2 TDNN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+      </h3>
+      <h3 id="_100:1463" style="top:1463;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.4.3 CNN + LSTM . . . . . . . . . . . . . . . . . . . . . . . . 59
+      </h3>
+      <h3 id="_100:1484" style="top:1484;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      4.4.4 Base CNN . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+      </h3>
+      <h3 id="_100:1504" style="top:1504;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5 Results and Analysis 62
+      </h3>
+      <h3 id="_100:1524" style="top:1524;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.1 Random Forest Classifier . . . . . . . . . . . . . . . . . . . . . . . 64
+      </h3>
+      <h3 id="_100:1544" style="top:1544;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.2 XGBoost Classifier . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+      </h3>
+      <h3 id="_100:1564" style="top:1564;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.3 Multi-Layer Perceptron Classifier . . . . . . . . . . . . . . . . . . 66
+      </h3>
+      <h3 id="_100:1585" style="top:1585;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.4 Support Vector Machine . . . . . . . . . . . . . . . . . . . . . . . 67
+      </h3>
+      <h3 id="_100:1605" style="top:1605;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.5 Logistic Regression . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+      </h3>
+      <h3 id="_100:1625" style="top:1625;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.6 Analysis of Machine Learning Models . . . . . . . . . . . . . . . . 68
+      </h3>
+      <h3 id="_100:1665" style="top:1665;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.7 ResNet50 NSER . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+      </h3>
+      <h3 id="_100:1686" style="top:1686;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.8 TDNN NSER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+      </h3>
+      <h3 id="_100:1706" style="top:1706;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.9 CNN + LSTM . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+      </h3>
+      <h3 id="_100:1726" style="top:1726;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.10 Base CNN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+      </h3>
+      <h3 id="_100:1746" style="top:1746;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.11 Further Analysis of Deep Learning Models . . . . . . . . . . . . . 81
+      </h3>
+      <h3 id="_100:1766" style="top:1766;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      5.12 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84
+      </h3>
+      <h3 id="_100:1787" style="top:1787;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      6 Conclusion 89
+      </h3>
+      <h3 id="_100:1807" style="top:1807;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      6.1 Recommendations . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+      </h3>
+      <h3 id="_100:1827" style="top:1827;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      References 92
+      </h3>
+      <h3 id="_100:1847" style="top:1847;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      A Research Ethics Documents 102
+      </h3>
+      <h3 id="_100:1867" style="top:1867;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      B Similarity Report 114
+      </h3>
+      <h3 id="_100:1888" style="top:1888;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      C Summary of Models For Literature 116
+      </h3>
+      <h3 id="_100:1908" style="top:1908;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      D Full Experiment Results of Machine Learning Models 129
+      </h3>
+      <h3 id="_100:1928" style="top:1928;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      D.1 Random Forest Classifier Parameter Experiments . . . . . . . . . 130
+      </h3>
+      <h3 id="_100:1948" style="top:1948;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      D.2 XGBoost Classifier Parameter Experiments . . . . . . . . . . . . . 135
+      </h3>
+      <h3 id="_100:1968" style="top:1968;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      D.3 Multi Layer Perception Classifier . . . . . . . . . . . . . . . . . . 140
+      </h3>
+      <h3 id="_100:1989" style="top:1989;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      D.4 Support Vector Machines . . . . . . . . . . . . . . . . . . . . . . . 143
+      </h3>
+      <h3>
+      D.5 Logistic Regression . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+      </h3>
+      <h3 id="_100:2029" style="top:2029;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      E Comparison of Deep Learning Models in Present Literature With
+      </h3>
+      <h3 id="_100:2049" style="top:2049;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      This Study 146
+      </h3>
+      <h3 id="_100:2069" style="top:2069;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      E.1 TDNN Architecture . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+      </h3>
+      <h3 id="_0:0" style="top:2200">
+      <h3 id="_100:2301" style="top:2301;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      </h3>
+      <h3 id="_100:2321" style="top:2321;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      E.2 ResNet50 Architecture . . . . . . . . . . . . . . . . . . . . . . . . 150
+      </h3>
+      <h3 id="_100:2341" style="top:2341;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      E.3 CNN+LSTM Architecture . . . . . . . . . . . . . . . . . . . . . . 152
+      </h3>
+      <h3 id="_100:2361" style="top:2361;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      E.4 CNN Architecture . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+      </h3>
+      <h3 id="_100:2382" style="top:2382;left:100">
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
+      F Resource Persons 157
+      </h3>
+
+  </section>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("myNavbar").style.top = "0";
+      } else {
+        document.getElementById("myNavbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+    </html>
