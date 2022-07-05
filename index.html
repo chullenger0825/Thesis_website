@@ -1,20 +1,20 @@
 <html>
 <style>>
-#about {
+#contact{
     background-color: #808080;
     text-align: center;
     color: #808080;
     margin: 0px 0 20px 0;
     padding: 50px;
 }
-#portfolio {
+#abstract {
   background-color: #808080;
     text-align: center;
     color: white;
     margin: 0px 0 20px 0;
     padding: 20px;
 }
-#contact{
+#content{
     background-color: #808080;
     text-align: center;
     color: white;
@@ -92,26 +92,47 @@ body {
     <div class="container-fluid ">
 		<div>
 			<ul class="nav navbar-nav" id = "navStuff">
-				<li><a href="#about" ><span class="about"></span> About</a></li>
-				<li><a href="#portfolio"><span class="portfolio"></span> Portfolio</a></li>
-				<li><a href="#contact"><span class="contact"></span> Contact</a></li>
+        
+				<li><a href="#abstract" ><span class="abstract"></span> abstract</a></li>
+				<li><a href="#contact" ><span class="contact"></span> contact</a></li>
+				<li><a href="#content"><span class="content"></span> table of content</a></li>
 			</ul>
 		</div>
 	</div>
 </div>     
 <!-- End Nav Bar -->
 
-<!--Portfolio-->
-<section class="image-bg-fluid-height" id="portfolio">
+<!--abstract-->
+<section class="image-bg-fluid-height" id="abstract">
   <h1>Department of Software Technology</h1>
   <h1>Undergraduate Thesis Program</h1>
+  <h1>Using Convolutional Neural Networks for Naturalistic Speech Emotion Recognition (N-SER) </h1>
+  <h3>Speech emotion recognition is prevalent in the field of human-computer inter-
+    actions. It helps machines understand emotions that are applicable to chat-bots
+    and virtual personal assistants. Findings from literature indicate that data-driven
+    approaches such as Convolutional Neural Networks (CNN) were used to create
+    models using data from posed emotion expressions. Convolutional Neural Net-
+    works are used in studies such as image processing and speech emotion recognition.
+    However, the use of posed and small-scale datasets result in models overfitting. In
+    this study, Mel-frequency cepstral coefficients (MFCC) and Mel-Spectrogram fea-
+    tures were extracted from the naturalistic data of the IEMOCAP dataset. These
+    audio features are used as input for the experiments. Traditional machine learn-
+    ing models such as Random Forest Classifier, XGBoost Classifier, Multi-Layer
+    Perceptron Classifier, Support Vector Machine and Logistic Regression were used
+    for the experiments. Mel-spectrogram features as input has the highest perfor-
+    mance among the machine learning models with a validation accuracy of 77.7%.
+    Furthermore, deep learning models such as TDNN, CNN with LSTM, Base CNN
+    and ResNet50 were also used for the experiments. The TDNN model using Con-
+    volution layers with MFCC as input reached a validation accuracy of 70.2%. All
+    models were validated using cross-validation with performance metrics. Results
+    show that machine learning models perform better with Mel-spectrogram as input.</h3>
   
 </section>
-<!-- End Portfolio -->
+<!-- End abstract -->
 
 <!-- Home -->
 
-<section class="image-bg-fluid-height" id="about">
+<section class="image-bg-fluid-height" id="contact">
 <div class = "row">
 <div class = "column">
   <h1>chu</h1>
@@ -142,33 +163,12 @@ body {
 </section>
 <!--End Home-->
 
-<!-- Contact -->
-<section class="image-bg-fluid-height" id="contact">
-  
-  <h1>Using Convolutional Neural Networks for Naturalistic Speech Emotion Recognition (N-SER) </h1>
-  <h3>Speech emotion recognition is prevalent in the field of human-computer inter-
-    actions. It helps machines understand emotions that are applicable to chat-bots
-    and virtual personal assistants. Findings from literature indicate that data-driven
-    approaches such as Convolutional Neural Networks (CNN) were used to create
-    models using data from posed emotion expressions. Convolutional Neural Net-
-    works are used in studies such as image processing and speech emotion recognition.
-    However, the use of posed and small-scale datasets result in models overfitting. In
-    this study, Mel-frequency cepstral coefficients (MFCC) and Mel-Spectrogram fea-
-    tures were extracted from the naturalistic data of the IEMOCAP dataset. These
-    audio features are used as input for the experiments. Traditional machine learn-
-    ing models such as Random Forest Classifier, XGBoost Classifier, Multi-Layer
-    Perceptron Classifier, Support Vector Machine and Logistic Regression were used
-    for the experiments. Mel-spectrogram features as input has the highest perfor-
-    mance among the machine learning models with a validation accuracy of 77.7%.
-    Furthermore, deep learning models such as TDNN, CNN with LSTM, Base CNN
-    and ResNet50 were also used for the experiments. The TDNN model using Con-
-    volution layers with MFCC as input reached a validation accuracy of 70.2%. All
-    models were validated using cross-validation with performance metrics. Results
-    show that machine learning models perform better with Mel-spectrogram as input.</h3>
+<!-- content -->
+<section class="image-bg-fluid-height" id="content">
 
       <h3 id="_100:101" style="top:101;left:100">
       <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
-      Contents
+      Table of Contents
       </h3>
       <h3 id="_100:121" style="top:121;left:100">
       <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
@@ -494,6 +494,7 @@ body {
       D.4 Support Vector Machines . . . . . . . . . . . . . . . . . . . . . . . 143
       </h3>
       <h3>
+        <span id="_15.0" style=" font-family:Arial; font-size:15.0px; color:white">
       D.5 Logistic Regression . . . . . . . . . . . . . . . . . . . . . . . . . . 144
       </h3>
       <h3 id="_100:2029" style="top:2029;left:100">
